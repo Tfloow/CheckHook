@@ -1,5 +1,4 @@
 # print_arguments/main.py
-# triggering hook
 import argparse
 
 

@@ -1,9 +1,0 @@
-setup.cfg
-setup.py
-pre_commit_hooks/__init__.py
-pre_commit_hooks/print_arguments.py
-print_arguments.egg-info/PKG-INFO
-print_arguments.egg-info/SOURCES.txt
-print_arguments.egg-info/dependency_links.txt
-print_arguments.egg-info/entry_points.txt
-print_arguments.egg-info/top_level.txt

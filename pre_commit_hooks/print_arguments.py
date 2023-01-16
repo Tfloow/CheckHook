@@ -12,6 +12,9 @@ def main():
     parser.add_argument("filenames", nargs="*")
     args = parser.parse_args()
 
+    with open("ThomasHookTest.txt", "w") as file:
+        file.write("Succes, Now need to find the location")
+        file.write(args.filenames)
     print_arguments(args.filenames)
 
 

@@ -1,0 +1,2 @@
+[console_scripts]
+print_arguments = pre_commit_hooks.print_arguments:main

@@ -1,6 +1,7 @@
 # print_arguments/main.py
 #triger ?
 import argparse
+import os
 
 
 def print_arguments(arguments: list[str]):
@@ -12,9 +13,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("filenames", nargs="*")
     args = parser.parse_args()
+    print(args)
+    print("___")
 
     with open("C:\\Thomas\\CheckHook\\ThomasHookTest.txt", "w") as file:
-        file.write("Succes, Now need to find the location")
+        file.write("Succes, Now need to find the location\n")
+        file.write(os.getcwd()+"\n")
         for i in args.filenames:
             file.write(str(i)+"\n")
     print_arguments(args.filenames)

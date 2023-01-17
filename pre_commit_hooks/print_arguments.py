@@ -15,7 +15,8 @@ def main():
 
     with open("C:\\Thomas\\CheckHook\\ThomasHookTest.txt", "w") as file:
         file.write("Succes, Now need to find the location")
-        file.write(i for i in args.filenames)
+        for i in args.filenames:
+            file.write(str(i)+"\n")
     print_arguments(args.filenames)
 
 

@@ -1,3 +1,9 @@
 *.xml
 *.iml
 *.txt
+
+*.aux
+*.log
+*.out
+*.gz
+*.toc

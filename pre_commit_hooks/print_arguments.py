@@ -28,9 +28,9 @@ def main():
         for i in args.filenames:
             print(i)
             if(i.split(".")[-1].lower() == "tex"):
-                timeCheckTex[i.split("i")[0]] = os.path.getmtime(os.getcwd()+"\\"+i)
+                timeCheckTex[i.split(".")[0]] = os.path.getmtime(os.getcwd()+"\\"+i)
             elif(i.split(".")[-1].lower() == "pdf"):
-                timeCheckPdf[i.split("i")[0]] = os.path.getmtime(os.getcwd()+"\\"+i)
+                timeCheckPdf[i.split(".")[0]] = os.path.getmtime(os.getcwd()+"\\"+i)
     for texName in timeCheckTex.keys():
         if timeCheckTex[texName] - timeCheckPdf.get(texName, 0) > 60:
             excpetionThrow(texName)
